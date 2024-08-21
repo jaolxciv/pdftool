@@ -1,0 +1,189 @@
+body {
+  background-color: white;
+  margin: auto;
+  width: 90%;
+}
+
+@font-face {
+  font-family: SourceSansPro-Black;
+  src: url(/fonts/SourceSansPro-Black.ttf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: SourceSansPro-SemiBold;
+  src: url(/fonts/SourceSansPro-SemiBold.ttf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: SourceSansPro-Bold;
+  src: url(/fonts/SourceSansPro-Bold.ttf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: SourceSansPro-Regular;
+  src: url(/fonts/SourceSansPro-Regular.ttf);
+  font-display: swap;
+}
+
+.top-strip {
+  display: flex;
+  flex-direction: row;
+  padding-top: 1rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  text-align: center;
+  width: 85%;
+}
+
+.title h1 {
+  font-family: "SourceSansPro-Bold";
+}
+
+.title p {
+    font-family: "SourceSansPro-Regular";
+}
+
+.title p strong {
+  font-family: "SourceSansPro-Semibold";
+}
+
+.top-tools>div {
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f8fb;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin: 1.5rem 0;
+  border: 0.15rem solid transparent;
+  align-items: center;
+  text-align: center;
+  box-shadow: 2.5px 2.5px 5px 0px rgb(193, 193, 193);
+  font-family: "SourceSansPro-Regular";
+}
+
+.top-tools>div strong {
+  font-family: "SourceSansPro-Semibold";
+}
+
+
+.top-tools>div>div img {
+  width: 100%;
+}
+
+.top-tools>div:nth-of-type(1)>div {
+  width: 20%;
+}
+
+.top-tools>div:nth-of-type(2)>div {
+  width: 30%;
+}
+
+.top-tools>div:nth-of-type(3)>div {
+  width: 50%;
+}
+
+.rate-stars img {
+  width: 100%;
+}
+
+.rate-stars {
+  width: 100%;
+  display: flex;
+}
+
+.top-tools div a {
+  text-decoration: underline;
+  color: red;
+}
+
+.top-tools div a:hover {
+  color: #9c0202;
+}
+
+.top-tools>div:nth-of-type(1) {
+  border: 0.2rem solid red;
+}
+
+.top-tools div:nth-of-type(2):hover,
+.top-tools div:nth-of-type(3):hover {
+  border: 0.15rem solid red;
+}
+
+/* BUTTONS */
+
+.red-btn {
+  background-color: red;
+  color: white;
+  margin-top: 0.5rem;
+  width: 80%;
+  height: 2rem;
+  border-radius: 1rem;
+  font-family: "SourceSansPro-Bold";
+  border: none;
+}
+
+.red-btn:hover {
+  background-color: #9c0202;
+  color: white;
+}
+
+.wh-btn {
+  background-color: white;
+  color: red;
+  margin-top: 0.5rem;
+  width: 80%;
+  height: 2rem;
+  border: 1px solid red;
+  border-radius: 1rem;
+  font-family: "SourceSansPro-Bold";
+}
+
+.wh-btn:hover {
+  background-color: #9c0202;
+  color: white;
+  border: 1px solid #9c0202;
+}
+/* BUTTONS */
+
+/* TOP SCROLL BUTTON */
+.top-scroll-btn {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  background-color: red;
+  border: none;
+  border-radius: 50%;
+  width: 3rem;
+  padding: 0.8rem;
+  /* aspect-ratio: 1/1; */
+  cursor: pointer;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.top-scroll-btn.show {
+  opacity: 1;
+}
+
+.top-scroll-btn img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  transform: rotate(90deg);
+}
+
+.top-scroll-btn:hover {
+  opacity: 0.8;
+}
+/* TOP SCROLL BUTTON */
