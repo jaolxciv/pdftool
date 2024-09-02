@@ -6,63 +6,353 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PDFtool</title>
   <link rel="stylesheet" href="css/styles.css">
+  <script src="/js/top-menu.js" defer></script>
+  <script src="/js/up-slider.js" defer></script>
+  <script src="/js/scroll-up.js" defer></script>
+  <link rel="icon" href="/img/favicon_pdftool.png" type="image/svg+xml">
 </head>
 
 <body>
   <header>
-    <span class="top-strip">
-      <a href="/index.html"><img src="/img/logo.svg" alt="pdftool-vergleich.com logo"></a>
-    </span>
-    <span class="dropdown-top"></span>
+    <div class="top-strip">
+      <a href="/index.html">
+        <div><img src="/img/logo.svg" alt="pdftool-vergleich.com logo"></div>
+      </a>
+      <div>
+        <div id="dropdown-top">☰</div>
+        <ul id="nav-links" style="display:none;">
+          <li><a>PDF vergleich</a></li>
+          <li>
+            <a id="testberichte">Testberichte</a>
+            <ul id="testberichte-menu" style="display:none;">
+              <li><a>anyPDF</a></li>
+              <li><a>Soda PDF</a></li>
+              <li><a>Expert PDF</a></li>
+              <li><a>PDF Extra</a></li>
+              <li><a>PDF Element</a></li>
+              <li><a>Acrobat PDF</a></li>
+              <li><a>PDF Architect</a></li>
+              <li><a>PDF Filler</a></li>
+              <li><a>PDF Sam</a></li>
+            </ul>
+          </li>
+          <li><a>FAQ</a></li>
+          <li><a>Blog</a></li>
+        </ul>
+      </div>
+    </div>
   </header>
-  <main>
+  <main class="homepage">
     <button class="top-scroll-btn" alt="scroll-to-top">
-      <img src="/img/arrow.svg" alt="white arrow up">
+      <img src="/img/icon_arrow.png" alt="white arrow up">
     </button>
     <div class="title">
-      <h1>Die besten PDF-Editoren 2024</h1>
+      <h1 class="black">Die besten PDF-Editoren 2024</h1>
       <p>Moderne PDF-Editoren sind wahre Alleskönner. In Qualität, Funktionsumfang und Bedienbarkeit unterscheiden sich
-        die PDF-Programme jedoch zum Teil erheblich. <strong>Die folgenden drei PDF-Editoren sind die besten des Jahres
+        die PDF-Programme jedoch zum Teil erheblich. <strong class="semibold">Die folgenden drei PDF-Editoren sind die
+          besten des Jahres
           2024.</strong></p>
-          <!-- Hello -->
     </div>
     <section class="top-tools">
       <div>
+        <span class="winner-label">
+          <p class="bold">TESTSIEGER</p>
+        </span>
+        <span class="free-label">
+          <p class="bold">KOSTENLOS</p>
+        </span>
         <div><img src="/img/anyPDF_logo.png" alt="anyPDF logo"></div>
         <p>anyPDF Ein Tool – unendlich viele Möglichkeiten. Großer Funktionsumfang, hervorragende Bedienbarkeit und dazu
-          noch <strong>kostenlos</strong> : Unser <strong>Testsieger anyPDF</strong> punktet auf der ganzen Linie. <a
-            href="https://pdftool-vergleich.com/pdf-test/anypdf/">Mehr erfahren</a></p>
-        <span class="rate-stars"><span><img src="/img/stars_5.png"></span>
-          <strong>4,9 | Preis: Ab 0,00 €</strong></span>
+          noch <strong class="semibold">kostenlos</strong> : Unser <strong class="semibold">Testsieger anyPDF</strong>
+          punktet
+          auf der ganzen Linie. <a class="info-link" href="https://pdftool-vergleich.com/pdf-test/anypdf/">Mehr
+            erfahren</a></p>
+        <span class="rate-stars"><span><img src="/img/stars_5.png" alt="rating 5 stars"></span>
+          <strong class="semibold">4,9 | Preis: Ab 0,00 €</strong></span>
         <button class="red-btn">Zum Anbieter</button>
       </div>
       <div>
         <div><img src="/img/logo_soda.webp" alt="anyPDF logo"></div>
         <p>Soda PDF* bietet einen herausragenden Funktionsumfang und eine ansehnliche Bedienoberfläche. Viele Funktionen
-          sind bereits in der kostenlosen Version enthalten. <a
+          sind bereits in der kostenlosen Version enthalten. <a class="info-link"
             href="https://pdftool-vergleich.com/pdf-test/soda-pdf/">Mehr erfahren</a></p>
-        <span><img><strong>4,7 | Preis: Ab 6,75 €</strong></span>
+        <span class="rate-stars"><span><img src="/img/stars_4_5.png" alt="rating 4.5 stars"></span><strong
+            class="semibold">4,7 | Preis: Ab 6,75 €</strong></span>
         <button class="wh-btn">Zum Anbieter</button>
       </div>
       <div>
         <div><img src="/img/logo_pdfexpert.webp" alt="anyPDF logo"></div>
         <p>Erstellen Sie professionell aussehende PDFs, fügen Sie Bilder und Texte hinzu oder bearbeiten Sie vorhandene
-          Dokumente nach Ihren Wünschen. <a href="https://pdftool-vergleich.com/pdf-test/pdf-expert/">Mehr erfahren</a>
+          Dokumente nach Ihren Wünschen. <a class="info-link"
+            href="https://pdftool-vergleich.com/pdf-test/pdf-expert/">Mehr erfahren</a>
         </p>
-        <span><img><strong>4,3 | Preis: Ab 84,99 €</strong></span>
+        <span class="rate-stars"><span><img src="/img/stars_4_5.png" alt="rating 4.5 stars"></span><strong
+            class="semibold">4,3 | Preis: Ab 84,99 €</strong></span>
         <button class="wh-btn">Zum Anbieter</button>
       </div>
     </section>
+
+
+
+
+
+
+
+    
     <section class="other-tools">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
+      <h2 class="black">Witere PDF Tools</h2>
+      <div>
+        <span><img src="/img/logo_pdf-extra.webp" alt="pdfExtra logo"></span>
+        <span>
+          <h3 class="bold"><strong>PDF Extra*</strong></h3>
+          <p>PDF Extra überzeugt durch hohe Nutzerfreundlichkeit und bietet trotzdem einen enormen Funktionsumfang. Ob
+            Sie bestehende PDFs bearbeiten, neue PDFs gestalten, Formulare effizient ausfüllen oder den Inhalt Ihrer
+            PDFs sicher verschlüsseln wollen.</p>
+        </span>
+        <ul>
+          <li>Gratisversion mit brauchbaren Features</li>
+          <li>Unterstützt Highlights, Textfelder und Formen</li>
+          <li>Flexibles Bezahlmodell als Abo oder Vollversion</li>
+        </ul>
+        <div>
+          <p>Preis:<strong class="semibold"> Ab 6,66 €</strong></p>
+          <button class="red-btn">Zum Anbieter</button>
+          <div class="rate-stars"><span><img src="/img/stars_4.png" alt="rating 4 stars"><strong
+                class="bold">4,0</strong></div>
+          <a class="info-link" href="https://pdftool-vergleich.com/pdf-test/pdf-extra/">Mehr erfahren</a>
+        </div>
+      </div>
+
+      <div>
+        <span><img src="/img/pdfelement_540.png" alt="pdfElement logo"></span>
+        <span>
+          <h3 class="bold"><strong>PDF Element*</strong></h3>
+          <p>PDFelement ist ein übersichtlicher PDF-Editor mit einem großen Funktionsumfang. Eine kostenlose Testversion
+            wird zwar angeboten, doch mit dieser können Sie das Tool nur für 14 Tage mit eingeschränkten Funktionen
+            ausprobieren.</p>
+        </span>
+        <ul>
+          <li>Kostenloser Download</li>
+          <li>PDF-Dateien scannen und bearbeiten</li>
+          <li>Für Mac und Windows</li>
+        </ul>
+        <div>
+          <p>Preis:<strong class="semibold"> Ab 89,00 €</strong></p>
+          <button class="red-btn">Zum Anbieter</button>
+          <div class="rate-stars"><span><img src="/img/stars_4.png" alt="rating 4 stars"><strong
+                class="bold">3,8</strong></div>
+          <a class="info-link" href="https://pdftool-vergleich.com/pdf-test/pdf-element/">Mehr erfahren</a>
+        </div>
+      </div>
+
+      <div>
+        <span><img src="/img/adobe-logo.svg" alt="Adobe logo"></span>
+        <span>
+          <h3 class="bold"><strong>Adobe Acrobat Pro*</strong></h3>
+          <p>Adobe Acrobat Pro ist seit vielen Jahren der marktführende PDF-Editor. Was auch immer Sie mit Ihren
+            PDF-Dateien vorhaben: Diese Software macht es möglich.</p>
+        </span>
+        <ul>
+          <li>Kostenlos als Testversion erhältlich</li>
+          <li>PDFs zusammenfügen, komprimieren und kommentieren</li>
+          <li>Ermöglicht online-Zusammenarbeit in Echtzeit</li>
+        </ul>
+        <div>
+          <p>Preis:<strong class="semibold"> Ab 23,79 €</strong></p>
+          <button class="red-btn">Zum Anbieter</button>
+          <div class="rate-stars"><span><img src="/img/stars_3_5.png" alt="rating 3 stars"><strong
+                class="bold">3,6</strong></div>
+          <a class="info-link" href="https://pdftool-vergleich.com/pdf-test/pdf-acrobat/">Mehr erfahren</a>
+        </div>
+      </div>
+
+      <div>
+        <span><img src="/img/logo_pdf_Architec.png" alt="pdfArchitec logo"></span>
+        <span class="free-label">
+          <p class="bold">KOSTENLOS</p>
+        </span>
+        <span>
+          <h3 class="bold"><strong>PDF Architect*</strong></h3>
+          <p>PDF Architect bietet Nutzerinnen einen übersichtlichen PDF-Editor mit zahlreichen Extras an – allerdings
+            nur im kostenpflichtigen Jahresabo. Möchten Sie PDFs bearbeiten, um Texte und Seiten individuell zu
+            gestalten, benötigen Sie die Standard-Version.</p>
+        </span>
+        <ul>
+          <li>Professionelle PDF-Bearbeitungssoftware für Einsteiger</li>
+          <li>Konvertierung von Dokumenten</li>
+          <li>Einfache und intuitive Benutzeroberfläche</li>
+        </ul>
+        <div>
+          <p>Preis:<strong class="semibold"> Ab 0,00 €</strong></p>
+          <button class="red-btn">Zum Anbieter</button>
+          <div class="rate-stars"><span><img src="/img/stars_3_5.png" alt="rating 3 stars"><strong
+                class="bold">3,5</strong></div>
+          <a class="info-link" href="https://pdftool-vergleich.com/pdf-test/pdf-architect/">Mehr erfahren</a>
+        </div>
+      </div>
+      <div>
+        <span><img src="/img/logo_pdf_filler.svg" alt="pdf filler logo"></span>
+        <span>
+          <h3 class="bold"><strong>pdfFiller*</strong></h3>
+          <p>pdffiller ist ein PDF-Editor, der insbesondere in Unternehmen und von professionellen Nutzenden angewendet
+            wird. Der mehrfach ausgezeichnete Dienst überzeugt mit hohem Funktionsumfang und moderaten Preisen inklusive
+            30-tägigem Gratiszeitraum für mehrere Abo-Modelle.</p>
+        </span>
+        <ul>
+          <li>Zusammenarbeit, Speicherung, Prüfung und Suche nach Dokumenten mit den benutzerfreundlichsten Tools auf
+            dem Markt</li>
+          <li>Bearbeite und fülle PDFs aus und teile sie sofort mit wenigen Klicks</li>
+          <li>Erstellung, Integration und Bereitstellung ganzer Geschäftsabläufe in wenigen Stunden</li>
+        </ul>
+        <div>
+          <p>Preis:<strong class="semibold"> Ab 8,00 €</strong></p>
+          <button class="red-btn">Zum Anbieter</button>
+          <div class="rate-stars"><span><img src="/img/stars_3.png" alt="rating 3 stars"><strong
+                class="bold">3,3</strong></div>
+          <a class="info-link" href="https://pdftool-vergleich.com/pdf-test/pdf-filler/">Mehr erfahren</a>
+        </div>
+      </div>
+
+      <div>
+        <span><img src="/img/pdfsam-logo.svg" alt="pdfSam logo"></span>
+        <span>
+          <h3 class="bold"><strong>PDF Sam*</strong></h3>
+          <p>Nutzer, die einen intuitiv bedienbaren PDF-Editor suchen, werden bei PDFsam fündig. Allerdings bietet die
+            kostenlose Basis-Version lediglich einen rudimentären Funktionsumfang. Wer etwas mehr will, greift zu PDFsam
+            Enhanced Standard – und ins Portemonnaie.</p>
+        </span>
+        <ul>
+          <li>Schnelles Ändern deiner Dokumente mit benutzerfreundlichen Funktionen</li>
+          <li>Bearbeiten von Text, Anpassen von Inhalten und Layouts in allen Arten von PDFs</li>
+          <li>Über 300 Dateiformate können genutzt und in das PDF-Format umgewandelt werden</li>
+        </ul>
+        <div>
+          <p>Preis:<strong class="semibold"> Ab 0,00 €</strong></p>
+          <button class="red-btn">Zum Anbieter</button>
+          <div class="rate-stars"><span><img src="/img/stars_2_5.png" alt="rating 2 stars"><strong
+                class="bold">2,6</strong></div>
+          <a class="info-link" href="https://pdftool-vergleich.com/pdf-test/pdf-sam/">Mehr erfahren</a>
+        </div>
+      </div>
+      <span>*Dies ist ein Affiliate-Link</span>
+    </section>
+    <section class="chars">
+      <div>
+        <h2 class="semibold">Was jeder gute PDF-Editor können muss</h2>
+        <p>Funktionen, wie die Dateiverschlüsselung oder die Bildbearbeitung innerhalb von PDFs, sind in Einzelfällen
+          sicherlich hilfreich. Viel wichtiger sind dem Großteil der Nutzerschaft aber Features, die ihnen konkreten
+          Mehrwert im Alltag bieten. Der PDF-Editor Ihrer Wahl sollte eine flexible Bearbeitung Ihrer Dokumente und eine
+          Komprimierung derselben ermöglichen. Auch das Zusammenfügen einzelner Seiten und eine unkomplizierte
+          Konvertierung von unterschiedlichen Dateiformaten sollten möglich sein.
+        </p>
+      </div>
+
+      <div class="up-slider">
+        <div><img src="/img/pdftool_1.webp"></div>
+        <div>
+          <h3 class="semibold">PDFs umfangreich bearbeiten.</h3>
+          <p>Viele Nutzer*innen wünschen sich, ihre Dokumente mit einem PDF-Editor auch bearbeiten zu können. Als
+            hilfreich wird insbesondere die Möglichkeit empfunden, Dokumente mit Kommentaren oder Markierungen zu
+            versehen. Unterstützt der PDF-Editor das Hinzufügen einer elektronischen Unterschrift, gilt dies als
+            zusätzliches Plus. Gute PDF-Editoren lassen außerdem eine Komprimierung des Dokuments zu – das spart
+            Speicherplatz und schont die Nerven beim Verschicken der Datei. </p>
+        </div>
+      </div>
+
+      <div class="up-slider">
+        <div><img src="/img/pdftool_2.webp"></div>
+        <div>
+          <h3 class="semibold">PDFs zusammenfügen und Seiten flexibel anordnen.</h3>
+          <p>Das Zusammenfügen mehrerer Einzelseiten zu einem PDF ist das stärkste Argument für gute PDF-Editoren. Sei
+            es bei der Bewerbung für einen Job, der Kommunikation mit Behörden oder der Arbeit im Büro: Eine gut
+            sortierte, vollständige Datei macht Eindruck, schafft Übersicht und erleichtert die Zusammenarbeit enorm.
+            Machen Sie Schluss mit Zettelwirtschaft und entscheiden Sie sich für einen PDF-Editor, der das Zusammenfügen
+            von einzelnen Dateien ermöglicht.</p>
+        </div>
+      </div>
+
+      <div class="up-slider">
+        <div><img src="/img/pdftool_3.webp"></div>
+        <div>
+          <h3 class="semibold">Dateien in PDFs konvertieren und umgekehrt.</h3>
+          <p>Nicht immer liegen Dokumente, die Sie bearbeiten, archivieren oder verschicken wollen, bereits als
+            praktische
+            PDF vor. Texte verfassen Sie womöglich als Docx und illustrieren wollen Sie Ihr Dokument mit JPEG-Bildern.
+            Umgekehrt wird nicht immer ein PDF gewünscht: Sind Sie mit der Anfertigung einer Präsentation beauftragt,
+            dürfte das PPT-Format Ihr Mittel der Wahl sein. Ein guter PDF-Editor unterstützt daher die Konvertierung
+            unterschiedlicher Dateiformate.</p>
+        </div>
+      </div>
+    </section>
+    <section class="faqs">
+      <h2 class="black">Die häusfigsten Fragen rund um PDFs</h2>
+
+      <details open>
+        <summary>Was macht man mit einem PDF-Editor?</summary>
+        <p>PDF ist ein spezielles Dateiformat, das sicherstellen soll, dass elektronische Dokumente stets in der
+          beabsichtigten Form betrachtet und gedruckt werden können. Heute ist dieses Format universell gebräuchlich. Es
+          gilt sowohl privat als auch am Arbeitsplatz als Standard im elektronischen Schriftverkehr. Ein PDF-Editor ist
+          eine Software, mit der dieses Dateiformat bearbeitet werden kann. Je nach Software beherrschen PDF-Editoren
+          unterschiedliche Funktionen. Zu den wichtigsten zählen:</p>
+        <ul>
+          <li>PDF-Dateien zusammenfügen.</li>
+          <li>Textbearbeitung und -markierung.</li>
+          <li>Seiten neu arrangieren und löschen.</li>
+          <li>Passwortschutz des Dokuments.</li>
+          <li>Konvertierung zu und von PDFs.</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Worauf muss ich bei einem PDF-Editor achten?</summary>
+        <p>Wählen Sie das Tool, das Ihren Ansprüchen an die Arbeit mit PDFs am ehesten gerecht wird. Dabei sollten Sie
+          einige Faktoren berücksichtigen, anhand derer Sie Ihre Entscheidung für einen PDF-Editor fällen können:</p>
+        <ul>
+          <li>Funktionsumfang: Der PDF-Editor Ihrer Wahl sollte alle von Ihnen benötigten Funktionen bieten. Die
+            Möglichkeit, PDFs zusammenzufügen, ist beispielsweise ein sinnvolles und oft gefragtes Feature.</li>
+          <li>Bedienbarkeit: Auch erfahrene Nutzer*innen profitieren von einer intuitiven und klar strukturierten
+            Bedienoberfläche. Gute PDF-Editoren zeichnen sich deshalb immer auch durch eine leicht zugängliche
+            Benutzeroberfläche aus.</li>
+          <li>Sicherheit: Sofern Sie häufig mit sensiblen Daten und Dokumenten arbeiten, sollte der PDF-Editor über
+            einen
+            Passwortschutz oder Verschlüsselungsfunktionen verfügen.</li>
+          <li>Preis: Nicht alle PDF-Editoren sind kostenlos. Weiterführende Funktionen bieten oftmals nur Tools, für die
+            Sie
+            bezahlen müssen. Prüfen Sie, ob Preis und Nutzen des PDF-Editors für Sie in einem sinnvollen Verhältnis
+            stehen.
+          </li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Sind alle PDF-Editoren kostenlos?</summary>
+        <p>Tatsächlich sind nicht alle PDF-Editoren kostenlos. Zwar bieten viele Hersteller Testversionen oder
+          kostenlose
+          Varianten ihrer eigentlich kostenpflichtigen Software an. Nicht selten fehlen diesen Versionen jedoch wichtige
+          Features, wie z. B. eine Funktion für das Zusammenfügen von PDFs oder der Passwortschutz. Vorsicht geboten ist
+          generell bei Abo-Modellen – das kann sehr schnell sehr teuer werden.</p>
+      </details>
+
+      <details>
+        <summary>Sollte ich einen PDF-Editor herunterladen oder einen Online-Dienst benutzen?</summary>
+        <p>Es hängt von Ihren persönlichen Präferenzen ab, ob Sie eine Online-Anwendung nutzen oder einen PDF-Editor auf
+          Ihrem Rechner installieren sollten. Online-Dienste zum Bearbeiten von PDFs bieten in der Regel eine hohe
+          Flexibilität, da sie von verschiedenen Geräten aus erreichbar sind. Auch sind Sie damit schneller startklar –
+          schließlich ersparen Sie sich die Installation. Allerdings bestehen Sicherheitsbedenken, da Ihre persönlichen
+          Daten eventuell auf fremden Servern gespeichert und weitergegeben werden. Auch bieten PDF-Editoren zum
+          Herunterladen meist die bessere Benutzerführung sowie mehr Funktionen. Gerade wenn Sie regelmäßig oder
+          beruflich
+          PDFs bearbeiten möchten, sollten Sie einen PDF-Editor installieren.</p>
+      </details>
     </section>
   </main>
-  <footer></footer>
+  <footer class="btm-strip">
+    <a href="/index.html">
+      <div><img src="/img/logo.svg" alt="pdftool-vergleich.com logo"></div>
+    </a>
+    <a href="#">Impressum</a>
+    <a href="#">Datenschutz</a>
+  </footer>
 </body>
 
 </html>
